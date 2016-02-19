@@ -2,8 +2,20 @@ alias l='ls -alF'
 alias lsd='ls -alF | grep '^d''
 alias d=less
 alias em=emacs
+
 alias da='django-admin.py'
 alias mg='./manage.py'
+
+# for python code coverage, note: this has -k in it
+alias cover="coverage run --source='.' manage.py test --failfast -k"
+
+# Safe is better
+alias cp='cp -iv'
+alias mv='mv -iv'
+
+# OSX
+alias finder='open -a Finder ./'
+
 alias dev='cddev ~/proj/dj/wmidev'
 alias kdev='cddev ~/proj/dj/kndev'
 alias adev='cddev ~/proj/dj/avdev'
