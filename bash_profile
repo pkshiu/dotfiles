@@ -11,8 +11,8 @@ fi
 # simple version
 export PS1='\h [\w]\$ '
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  source $(brew --prefix)/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+  source `brew --prefix`/etc/bash_completion.d/git-completion.bash
   source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 
   # monochrome version
