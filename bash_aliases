@@ -1,7 +1,12 @@
 alias l='ls -alF'
 alias lsd='ls -alF | grep '^d''
 alias d=less
-alias em=emacs
+alias em='emacs -nw'
+alias love='/Applications/love.app/Contents/MacOS/love'
+
+alias kc=kubectl
+alias cddev="kubectl config use-context arn:aws:eks:us-east-1:442900888080:cluster/dev-1"
+alias cdstage="kubectl config use-context arn:aws:eks:us-east-1:442900888080:cluster/stage-1"
 
 alias da='django-admin.py'
 alias mg='./manage.py'
@@ -16,18 +21,10 @@ alias mv='mv -iv'
 # OSX
 alias finder='open -a Finder ./'
 
-alias dev='cddev ~/proj/dj/wmidev'
-alias kdev='cddev ~/proj/dj/kndev'
-alias adev='cddev ~/proj/dj/avdev'
-alias cdev='cddev ~/proj/dj/cmcdev'
-alias 3dev='cddev ~/proj/dj/341dev'
 alias jsc='/System/Library/Frameworks/JavaScriptCore.framework/Versions/Current/Resources/jsc'
 alias grepy='grep -ir --include=*.py'
 
 alias weat='/Users/pk/webapps/piglowserver/bin/python /Users/pk/webapps/piglowserver/src/weather.py'
-
-alias da_create_1='da_create 1.0 django-1.0-beta_1 impdev'
-alias da_create_96='da_create 0.96 django-0.96.2 imp96dev'
 
 #
 # cddev env_name dir
