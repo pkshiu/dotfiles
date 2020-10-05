@@ -5,8 +5,6 @@ alias em='emacs -nw'
 alias love='/Applications/love.app/Contents/MacOS/love'
 
 alias kc=kubectl
-alias cddev="kubectl config use-context arn:aws:eks:us-east-1:442900888080:cluster/dev-1"
-alias cdstage="kubectl config use-context arn:aws:eks:us-east-1:442900888080:cluster/stage-1"
 
 alias da='django-admin.py'
 alias mg='./manage.py'

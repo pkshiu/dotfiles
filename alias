@@ -1,0 +1,25 @@
+alias cp='cp -iv'
+alias d=less
+alias em='emacs -nw'
+alias kc=kubectl
+alias l='ls -alF'
+alias love='/Applications/love.app/Contents/MacOS/love'
+alias lsd='ls -alF | grep '^d''
+alias mv='mv -iv'
+
+
+
+
+#
+# Kube env switching
+function cdprod() {
+    echo "switching to prod"
+    export AWS_PROFILE=prod
+    kubectl config use-context prod-01
+}
+
+function cddev() {
+    echo "switching to dev"
+    export AWS_PROFILE=dev
+    kubectl config use-context dev-3
+}
