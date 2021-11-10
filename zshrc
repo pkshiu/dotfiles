@@ -63,7 +63,7 @@ git_prompt() {
   fi
 }
 
-PS1='%F{white}%~$(git_prompt)%F{244}%# %F{reset}'
+PS1='%F{white}%~$(git_prompt)%F{244}%# %F{reset}\n'
 
 
 
@@ -142,8 +142,7 @@ git_info() {
 
 # Use ❯ as the non-root prompt character; # for root
 # Change the prompt character color if the last command had a nonzero exit code
-PS1='
-%m $(ssh_info)%{$fg[magenta]%}%~%u $(git_info) %(?.%{$fg[blue]%}.%{$fg[red]%})%(!.#.$)%{$reset_color%} '
+PS1='%m $(ssh_info)%{$fg[magenta]%}%~%u $(git_info) %(?.%{$fg[blue]%}.%{$fg[red]%})%(!.#.$)%{$reset_color%} '
 
 
 

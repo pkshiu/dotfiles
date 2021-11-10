@@ -6,6 +6,7 @@ alias l='ls -alF'
 alias love='/Applications/love.app/Contents/MacOS/love'
 alias lsd='ls -alF | grep '^d''
 alias mv='mv -iv'
+alias vact='. .venv/bin/activate'
 
 
 
@@ -22,4 +23,10 @@ function cddev() {
     echo "switching to dev"
     export AWS_PROFILE=dev
     kubectl config use-context dev-3
+}
+
+function cdpk() {
+    echo "switching to pkdev"
+    export AWS_PROFILE=pkdev
+    export AWS_DEFAULT_REGION=us-east-1
 }
