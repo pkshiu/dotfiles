@@ -8,25 +8,26 @@ alias lsd='ls -alF | grep '^d''
 alias mv='mv -iv'
 alias vact='. .venv/bin/activate'
 
-
+# python3 -m venv .venv --prompt stats-work
+alias makevenv='python3 -m venv .venv --prompt '
 
 
 #
 # Kube env switching
 function cdprod() {
-    echo "switching to prod"
+    echo "switching to prod (EMA)"
     export AWS_PROFILE=prod
     kubectl config use-context prod-01
 }
 
 function cddev() {
-    echo "switching to dev"
+    echo "switching to dev (EMA)"
     export AWS_PROFILE=dev
     kubectl config use-context dev-3
 }
 
 function cdpk() {
-    echo "switching to pkdev"
+    echo "switching to pkdev (imperial)"
     export AWS_PROFILE=pkdev
     export AWS_DEFAULT_REGION=us-east-1
 }
